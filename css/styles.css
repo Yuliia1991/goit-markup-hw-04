@@ -139,7 +139,7 @@ transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
-      url(../images/people-office\ 1.jpg);
+      url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -322,7 +322,7 @@ text-transform: capitalize;
 
 }
 .team-icon-icon {
-  fill: #f4f4f4;
+  fill: #f4f4fd;
 }
 /*****name****/
 
@@ -341,7 +341,7 @@ letter-spacing: 0.02em;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.5em;
-letter-spacing: 0.2em;
+letter-spacing: 0.02em;
 }
 
 /*====Our Potfolio====*/
@@ -362,12 +362,12 @@ text-transform: capitalize;
 }
 .portfolio-list {
   width: calc((100% - 48px) / 3);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio-list:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
-
-.portfolio-list:hover .cover-portfolio-container {
-  transform: translateY(0);
 }
 
 .portfolio-item {
@@ -395,42 +395,49 @@ line-height: 1.2em;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
 }
-.text-portfolio {
+/*.text-portfolio {
 font-size: 16px;
 line-height: 1.5em;
 letter-spacing: 0.02em;
-}
+}*/
 
 /*******Portfolio-color-wrap***********/
 
-.portfolio-cover-wrap{
+.portfolio-cover-wrap {
   position: relative;
   overflow: hidden;
-} 
+}
 
-.cover-portfolio-container {
-  position: absolute;
-  top: 0;
-  background-color: #4d5ae5;
-  height: 100%;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  border: 1px solid #f4f4fd;
-  display: flex;
-  align-items: center;
-  padding: 40px 32px 164px 32px;
-  transform: translateY(100%);
-  transition: transform 250ms linear;
-
+.portfolio-list:hover .cover-portfolio-text {
+  transform: translateY(0);
 }
 .cover-portfolio-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  /*border: 1px solid #f4f4fd;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  padding: 40px 32px 164px 32px;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2,1);
+
+
+
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5em;
 letter-spacing: 0.02em;
 color: #f4f4f4;
+
 }
 
-/*====Futter====*/
+/*====Footer====*/
 .container-footer {
   display: flex;
   align-items: baseline;
@@ -494,7 +501,7 @@ margin-bottom: 16px;
 .footer-icon-item {
   width: 40px;
   height: 40px;
-  transition: backdround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .footer-icon-link {
  width: 100%;
@@ -505,6 +512,7 @@ margin-bottom: 16px;
  background-color: #4d5ae5;
  border-radius: 50%;
  position: relative;
+ transition: backdround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  .footer-icon-link:hover,
@@ -513,7 +521,7 @@ margin-bottom: 16px;
 
  }
  .icon-icon {
-  fill: #f4f4f4;
+  fill: #f4f4fd;
   position: absolute;
  }
 ul {
