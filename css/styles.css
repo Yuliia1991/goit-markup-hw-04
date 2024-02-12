@@ -508,9 +508,10 @@ margin-bottom: 16px;
 
  .footer-icon-link:hover,
  .footer-icon-link:focus {
-  background-color: #31d0aa ;
+  background-color: #31d0aa;
+  transition: backdround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
- .footer-icon-icon {
+ .icon-icon {
   fill: #f4f4f4;
   position: absolute;
  }
