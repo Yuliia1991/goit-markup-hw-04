@@ -442,12 +442,13 @@ color: #f4f4fd;
   display: flex;
   align-items: baseline;
   margin-left: 136px;
-  
+  position: relative;
   
 }
 .footer-web {
   display:inline-block;
   margin-right: 120px;
+  ;
 }
 .footer {
 padding:100px 0;
@@ -486,7 +487,6 @@ max-width: 264px;
   display: inline-block;
   width: 208px;
 
-  
 }
 .text-footer-icon {
   display: flex;
